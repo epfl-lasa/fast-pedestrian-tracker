@@ -1,0 +1,22 @@
+# 	Format: 
+# 	# comments (optional)
+# 	name value # comments (optional)
+
+# Data association/ track management
+rGate 0.75 # maximum distance prediction-detection for association
+lookBack 20 # maximum number of frames a track survives without observation
+lookBackSpecific 0 # 0=noDrSpaam, else: maximum number of frames a track survives without DrSpaam-observation
+nConfirm 4 # minimum number of observations a track needs to be published
+importDetections 1 # specifies if detections from DrSpaam are imported (0=no, 1=yes)
+nConfirmSpecifically 1 # minimum number of DrSpaam-observations a track needs to be published
+
+# Pedestrian state estimation
+alpha 0.15 # parameter of alpha-beta-gamma-filter
+beta 0.02 # parameter of alpha-beta-gamma-filter
+gamma 0.0 # parameter of alpha-beta-gamma-filter
+
+# Leg detection
+rMax 0.07 # maximum radius of fit circles to be considered
+lMin 0.05 # minimum distance of endpoints for a segment to be considered
+lMax 0.3 # maximum distance of endpoints for a segment be considered 
+costMin 0.0001 # minimum cost of line regression for a segment to be considered
